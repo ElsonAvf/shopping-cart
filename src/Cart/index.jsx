@@ -4,6 +4,7 @@ import CartProduct from './CartProduct'
 import EmptyMessage from './EmptyMessage'
 import RemoveProductModal from './RemoveProductModal'
 import ConfirmedPurchaseModal from './ConfirmPurchaseModal'
+import cartIcon from './../assets/cart.svg'
 
 export default function Cart() {
   const [removeProductModal, setRemoveProductModal] = useState({
@@ -30,7 +31,7 @@ export default function Cart() {
       <section className='m-4 border border-black p-4 max-w-md mx-auto'>
         <div className='mb-4 flex justify-between items-center'>
           <h1 className='text-3xl'>You Cart</h1>
-          <img className='w-20' src='/src/assets/cart.svg' alt='Cart' />
+          <img className='w-20' src={cartIcon} alt='Cart' />
         </div>
         <table>
           <tr className='text-xl'>

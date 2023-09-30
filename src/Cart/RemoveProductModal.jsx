@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { useDispatchContext } from './../context/Cart'
+import cartErrorIcon from './../assets/cart-error.svg'
 
 export default function RemoveProductModal({ product, close }) {
   const dispatch = useDispatchContext()
@@ -12,7 +13,7 @@ export default function RemoveProductModal({ product, close }) {
   return (
     <div className='inset-0 grid place-content-center bg-black/50 fixed'>
       <div className='w-96 p-5 rounded bg-white'>
-        <img className='w-32 opacity-60 mx-auto' src='/src/assets/cart-error.svg' alt='Cart' />
+        <img className='w-32 opacity-60 mx-auto' src={cartErrorIcon} alt='Cart' />
         <p className='text-center mt-2'>
           Do you wish to remove <b>{product.quantity} {product.title}</b> from your cart?
         </p>

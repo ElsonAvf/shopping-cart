@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types'
+import arrowUpIcon from './../../assets/arrow-up.svg'
+import arrowDownIcon from './../../assets/arrow-down.svg'
 
 export default function QuantityManager({ quantity, setQuantity }) {
   const increaseQuantity = () => {
@@ -34,7 +36,7 @@ export default function QuantityManager({ quantity, setQuantity }) {
       <h3 className='text-center'>quantity</h3>
       <div className='flex border border-black rounded'>
         <button className='border-r border-r-black w-9 h-9' onClick={increaseQuantity}>
-          <img className='w-4 m-auto' src='/src/assets/arrow-up.svg' />
+          <img className='w-4 m-auto' src={arrowUpIcon} />
         </button>
         <form onSubmit={changeQuantity}>
           <input
@@ -46,7 +48,7 @@ export default function QuantityManager({ quantity, setQuantity }) {
           />
         </form>
         <button className='border-l border-l-black w-9 h-9' onClick={decreaseQuantity}>
-          <img className='w-4 m-auto' src='/src/assets/arrow-down.svg' />
+          <img className='w-4 m-auto' src={arrowDownIcon} />
         </button>
       </div>
     </section>
