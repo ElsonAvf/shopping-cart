@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import Product from './../components/Product'
+import trashIcon from './../assets/trash.svg'
 
 export default function CartProduct({ product, removeProduct }) {
   return (
@@ -14,7 +15,7 @@ export default function CartProduct({ product, removeProduct }) {
           shouldDisplay: true,
           product: product
         })}>
-          <img className='w-7' src='/src/assets/trash.svg' alt='delete product' />
+          <img className='w-7' src={trashIcon} alt='delete product' />
         </button>
         <Product product={product} />
       </div>
