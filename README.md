@@ -1,3 +1,1 @@
-# React + Vite
-
-link: <https://elsonavf.github.io/shopping-cart/>
+link: <https://shopping-cart-eavf.netlify.app/shop>
